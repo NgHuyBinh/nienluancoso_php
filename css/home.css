@@ -1,0 +1,648 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+input, textarea, select { outline:none;}
+/*CSS MAIN*/
+html{
+	background: url(images/bgHtml.gif);}
+body{
+	background: url(images/bgBody.png);
+	font-size: 12px; font-family:Arial, Helvetica, sans-serif;
+	color: #413122;}
+ol,ul{
+	list-style: none; margin:0; padding:0; border:0;}
+img{
+	border:0; padding:0; margin:0; }
+a{
+	color:blue; text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif; font-size:12px; }
+a:hover{color:green; text-decoration: underline;}
+.clr{
+	clear:both;}
+.fr{
+	float:right;}
+.fl{
+	float: left;}
+	
+.all{
+	margin:0 auto;
+	width:980px;}
+
+
+
+/*HEADER*/
+.header{
+	position:relative;
+	height:150px; width:100%;
+	background: url(images/bgHeader.png) top center no-repeat;
+	overflow:hidden;}
+	.logo{
+		height:100%; width:295px;
+		margin:20px auto 0;
+		background:none;
+		text-align:left;}
+	.language{
+		width:250px;
+		position:absolute; bottom:10px; right:0;
+		overflow:hidden;}
+	.language img{
+			width:24px; margin:1px 0 0 8px;}
+	.homeSearch{
+		float:left;
+		overflow:hidden;
+		background:url(images/bgMenu.gif) bottom left repeat-x;}
+		.homeSearchText{
+			float:left;
+			width:145px;height:20px; line-height:20px;
+			padding:0 0 0 7px;
+			background:none;
+			border:none;
+			font:11px Arial, Helvetica, sans-serif; color:#E1DAC9;}
+		.homeSearchButton{
+			float:left;
+			float:left;
+			width:24px; height:20px;
+			margin:0 0 0 1px;
+			cursor:pointer;
+			border:none;
+			background:url(images/icoSearch.png) center no-repeat}
+		.homeSearchButton:hover{
+			background-color:#a01b19;}
+	.shoppingCart{
+		height:16px;line-height:16px;
+		margin:10px 0 0; padding:0 0 0 25px;
+		background:url(images/icoShopping.png) left center no-repeat;}
+	.shoppingCart a{ color:#f09695; font-weight:bold;}
+	.shoppingCart b{}
+/*MENU*/
+#phai{
+	float:right;
+}
+.headerMenu{
+	height:45px;
+	margin:0 0 10px;
+	border-bottom:1px solid #191613;
+	border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;
+	}
+.headerMenu ul{
+	height:45px;
+	background:url(images/bgMenu.gif) top left repeat-x;}
+	.headerMenu ul li{
+		float:left;
+		position:relative;
+		padding:0 2px 0 0;
+		background:url(images/bgMenuSplit.gif) top right no-repeat;}
+		.headerMenu ul li a{
+			display:block;
+			padding:15px 25px;
+			font-size:12px; font-weight:bold;		
+			text-transform:uppercase; text-shadow:0 -1px #600000; 
+			color:#e1dac9}
+		.headerMenu ul>li a:hover, .headerMenu ul>li.selected a{
+			background:url(images/bgMenuHover.gif) top right repeat-x;}
+	ul.subMenu{
+		width:180px;
+		z-index:100;}	
+	.headerMenu ul li:hover ul.subMenu{}
+		ul.subMenu li{
+			margin:0; padding:0;
+			background:url(images/bgMenu.gif) top left repeat-x;}
+		ul.subMenu li:first-child{
+			border-top:none}
+		ul.subMenu li a{
+			display:block;
+			padding:10px 25px;
+			font-size:12px;
+			text-transform:uppercase;}
+		ul.subMenu li a:hover{}
+/*BANNER*/
+.bigBanner{
+	width:100%; height:;
+	margin:0 0 0;
+	overflow:hidden;}
+	.bigBannerFooter{
+		width:960px; height:30px; margin:-12px 0 5px;
+		background:url(images/bigBannerFooter.png) no-repeat center;}
+		
+/*COL LEFT*/
+.colLeft{
+	width:590px; height:;
+	position:relative;
+	padding:0 0 0; 
+	overflow:hidden;}
+		h2.colLeftTitle{
+			margin:0 0 15px;
+			font-size:30px; font-style:italic;
+			font-family:"Times New Roman", Times, serif;
+			color:#3b3b3b;}
+
+/*COL RIGHT*/
+.colRight{
+	width:350px;;
+	overflow:hidden;}
+
+			
+	
+/*FOOTER*/
+.footer{
+	height:100px;
+	margin:0 0 0;
+	background:url(images/footer.jpg) top center repeat-x;
+	overflow:hidden;
+	padding:15px 0 0;
+	text-align:center;
+	color:#c6beac;}
+		.footer a{
+			color:#f1d553;}
+
+.footer div{
+	height: 100px;
+}
+
+/*HOME*/
+	/*HOME INTRO*/
+	.homeIntro{
+		width:100%;
+		margin:0 auto; padding:10px 0 25px;}
+				.homeIntro h2{
+					margin:0 0 5px;}
+				.homeIntro p{
+					margin:10px 0 0;}
+	/*BOOKING FORM*/
+	.bookingFormOutline{
+		border:1px solid #cfc2b6;
+		margin:0 0 20px;}
+	.bookingForm{
+		border:1px solid #fff;
+		padding:15px;
+		background:url(images/bookingForm.gif) top left repeat-x #f5f3f2;}	
+		h2.bookingFormTitle{
+			padding:0 0 20px;
+			background:url(images/bookingFormTitle.png) bottom center no-repeat;;
+			font-family:"Times New Roman", Times, serif; font-size:22px;
+			text-align:center;text-transform:uppercase;
+			color:#a31c1a;}
+		.bookingFormContent{
+			overflow:hidden;}
+		.bookingFormContent li{
+			margin:10px 0 0;}
+			.bookingFormContent label{
+				display:inline-block;
+				width:70px;}
+			.bookingFormContent select{
+				width:100px; line-height:20px;
+				padding:3px; margin: 0 0 0 10px;
+				background:url(images/textbox.gif) top left repeat-x #fff;
+				border:1px solid #f0ebe7;
+				box-sizing: content-box;
+				-ms-box-sizing: content-box;
+				-moz-box-sizing: content-box;}
+			.bookingFormContent input[type="text"],.bookingFormContent textarea {
+				line-height:20px; width:220px;
+				padding:3px; margin: 0 0 0 10px;
+				background:url(images/textbox.gif) top left repeat-x #fff;
+				border:1px solid #f0ebe7;
+				box-sizing: content-box;
+				-ms-box-sizing: content-box;
+				-moz-box-sizing: content-box;
+				font-family:Arial, Helvetica, sans-serif;}
+				.bookingFormContent input[type="password"],.bookingFormContent textarea {
+					line-height:20px; width:220px;
+					padding:3px; margin: 0 0 0 10px;
+					background:url(images/textbox.gif) top left repeat-x #fff;
+					border:1px solid #f0ebe7;
+					box-sizing: content-box;
+					-ms-box-sizing: content-box;
+					-moz-box-sizing: content-box;
+					font-family:Arial, Helvetica, sans-serif;}
+				
+			.bookingFormContent input[type="submit"]{
+				line-height:29px;height:28px;
+				padding:0 15px; margin:0 0 0 10px;
+				background:url(images/viewMore.gif) left top repeat-x #991715;
+				border:none;
+				border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;
+				text-transform:uppercase; text-shadow:0 -1px #8d1412;
+				font-size:11px; font-weight:bold;
+				color:#fff;
+				cursor:pointer;}
+			.bookingFormContent input[type="submit"]:hover{
+				background:url(images/viewMore.gif) left bottom repeat-x #c02a28;
+				text-shadow:0 1px #8d1412;}
+				
+	/*HOME PRODUCT*/
+	.homeProductItem{
+		float:left;
+		width:280px;
+		margin:0 20px 15px 0;}
+			.homeProductImage{
+				float:left;
+				width:90px; height:90px;
+				text-align:center;
+				border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;
+				overflow:hidden;}
+				.homeProductImage img{
+					height:100%;
+					margin:0 0 0 -30%;}
+			.homeProductInfo{
+				float:right;
+				width:170px;}
+				.homeProductInfo a{
+					font-weight:bold;
+					color:#413122;}
+				.homeProductInfo a:hover{
+					color:#a01b19;}
+				.homeProductInfo .priceTag{
+					margin:5px 0 10px;}
+			
+	/*SUPPORT ONLINE*/	
+	.supportOnline{
+		border:1px solid #e5e1d5;
+		background:#f3f0e7;
+		padding:15px;
+		overflow:hidden;}
+	.supportOnline .supportInfo{
+		text-align:center;}
+		.supportOnline .supportInfo b{
+			color:#000000;}
+		.supportOnline .supportInfo p{
+			margin:10px 0 5px;
+			color:#a11b19;}
+	/*PRICE TABLE*/
+	.priceTable{
+		margin:0 0 20px;
+		background:#f4e08e;
+		border-left:1px solid #2b2522;
+		border-top:1px solid #2b2522;}
+	.priceTable th, .priceTable td{
+		padding:8px; text-align:left;
+		background:#f4e08e;
+		border-right:1px solid #2b2522;
+		border-bottom:1px solid #2b2522;
+		color:#000000}
+	.priceTable th{
+		font-weight:bold;
+		color:#a01b19;}
+/*PAGE*/		
+	.page {
+		font-size: 14px;
+		font-weight: bold;
+		text-align: right;}
+	.page span {
+		color: #fff;
+		display: inline-block;
+		margin: 0  0 0 15px;
+		background:#a11b19;
+		border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;
+		width:20px; line-height:20px;
+		text-align:center;}
+	.page a {
+		color: #413122;
+		font-size:14px; font-weight:bold;
+		display: inline-block;
+		margin: 0  0 0 15px;}
+	.page a:hover {
+		color: #a11b19;}
+/*PATH*/
+.path, .path a {
+    clear: both;
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+.path a {
+    background: url("images/path.gif") no-repeat scroll right center transparent;
+    color: #655954;
+    margin: 0 3px 0 0;
+    padding: 0 8px 0 0;
+}
+.path a:hover {
+    color: #991715;
+}
+
+/*BUTTONS*/
+.bottomBorder{
+	margin:0 0 15px;
+	background:url(images/bottomBorder.png) center bottom no-repeat;
+	overflow:hidden;
+	padding-bottom:20px}		
+.bigTitle{
+	margin:0 0 10px;
+	font-family:"Times New Roman", Times, serif;
+	font-size:22px;
+	text-transform:uppercase;
+	color:#991715;}				
+.priceTag{
+	height:23px; line-height:23px;
+	padding:0 10px 0;
+	background:url(images/priceTag.png) left top no-repeat;
+	border-radius:0 3px 3px 0;-moz-border-radius:0 3px 3px 0;-webkit-border-radius:0 3px 3px 0;
+	font-weight:bold;
+	color:#fff;}		
+a.viewMore{
+	display:inline-block;
+	line-height:29px;height:28px;
+	padding:0 15px;
+	background:url(images/viewMore.gif) left top repeat-x #991715;
+	border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;
+	text-transform:uppercase; text-shadow:0 -1px #8d1412;
+	font-size:11px; font-weight:bold;
+	color:#fff;}
+a.viewMore:hover{
+	background:url(images/viewMore.gif) left bottom repeat-x #c02a28;
+	text-shadow:0 1px #8d1412;}
+				
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/	
+	#chim{
+		width:223px;
+	}
+/*LIST PRODUCT*/
+.listProductItem{
+	float:left;
+	width:280px;
+	margin:0 20px 20px 0;}
+		.listProductImage{
+			position:relative;
+			width:280px; height:150px;
+			text-align:center;
+			border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;
+			overflow:hidden;}
+			.listProductImage img{
+				width:100%;}
+			.listProductImage .priceTag{
+				position:absolute; bottom:0; left:0;
+				background:#af2220; background-image:none;
+				font-size:13px;}
+
+		.listProductInfo{
+			width:280px;
+			margin:10px 0;}
+			.listProductInfo a{
+				font-weight:bold; font-size:12px; text-transform:uppercase;
+				color:#413122;}
+			.listProductInfo a:hover{
+				color:#a01b19;}
+			.listProductInfo p{
+				margin:0 0 8px;}
+			a.listProductMore{
+				font-size:11px;font-weight:normal;
+				text-transform:uppercase;
+				color:#a01a17; padding:0 7px 0 0;
+				background: url(images/node.png) right center no-repeat;}
+			a.listProductMore:hover{
+				color:#655954;}
+				
+/*RELATED*/
+.relatedContent{
+	padding:0 0 0 15px;}
+	.relatedContent li{
+		padding:0 0 0 12px; margin:5px 0;
+		background: url(images/node02.png) left 6px no-repeat;
+		font-size:13px;}
+	.relatedContent li a:hover{
+		color:#991715}
+		
+/*PAGE SERVICE DETAILS*/
+.serviceDetails{
+	margin:0 0 30px;}
+	.serviceGallery{
+		width:420px;}
+		.serviceImage_b{
+			width:390px;height:300px;
+			margin:0 auto;
+			overflow:hidden;}
+			.serviceImage_b	img{
+				height:100%;}
+		.serviceImage_s{
+			width:390px;
+			margin:5px auto 0;}
+			.serviceImage_s	 li{
+				float:left;
+				width:90px;height:60px;
+				margin:0 5px 0 0;
+				overflow:hidden;}
+				.serviceImage_s	 li img{
+					height:100%;}
+	.serviceDetailInfo{
+		width:220px;}
+		.serviceDetailInfo .title{
+			margin:0 0 8px;
+			font-family:"Times New Roman", Times, serif;
+			font-size:22px; font-style:italic;
+			color:#f09695;}
+		.serviceDetailInfo p{
+			padding:5px 0;
+			border-bottom:1px solid #d9d9d9;}
+			.serviceDetailInfo p b{
+				display:inline-block;
+				width:80px;}
+
+/*PAGE NEWS LIST*/		
+	.newListItem{
+		padding:0 0 20px; margin:20px 0;
+		border-bottom:1px dotted #d9d9d9;
+		overflow:hidden;}
+		.newListImage{
+			width:190px; height:130px;
+			margin:0 20px 0 0;
+			border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;
+			overflow:hidden;}
+			.newListImage img{
+				height:100%;}
+		.newListContent{
+			overflow:hidden;}
+			.newListContent a{
+				font-size:18px;
+				color:#251f1c;}
+			.newListContent a:hover{
+				color:#A31C1A;}
+			
+			.newListContent p{
+				margin:0 0 8px}
+	
+
+/*PAGE GALLERY*/
+.fullPage{
+	position:relative;
+	padding: 0; 
+	overflow:hidden;}
+
+	.pageGallery{}
+		.galleryImage{
+			float:left;
+			width:200px; height:160px;
+			margin:0 15px 15px;
+			background:url(images/plus.png) center no-repeat#000;
+			border:5px solid #ececec;
+			overflow:hidden;}
+		.galleryImage img{
+			height:100%;}
+		.galleryImage:hover img{
+				opacity:0.4;
+				filter:alpha(opacity=40);}		
+	
+	
+/*SHOPING CART*/
+.shopingTable{
+	border-left:1px solid #d9d9d9;
+	border-top:1px solid #d9d9d9;}
+	.shopingTable tr{}
+	.shopingTable tr td{
+			padding:6px 8px;
+			border-right:1px solid #d9d9d9;
+			border-bottom:1px solid #d9d9d9;}
+
+	.shopingTable tr th{
+		padding:6px 8px;
+		font-size:13px; font-weight:bold;
+		border-right:1px solid #d9d9d9;
+		border-bottom:1px solid #d9d9d9;}
+.shopingBtn {
+	margin:15px 0 0;}
+	.shopingBtn a{
+		display:inline-block;
+		padding:4px 8px; margin:0 0 0 10px;
+		background:#5b5b5b;
+		font-weight:bold; font-size:12px;
+		color:#fff;}
+	.shopingBtn a:hover{
+		background:#f09695;}
+	
+/*CONTACT*/
+.contactForm{
+	 width:300px;}
+	.contactForm p{
+		margin:0 0 15px;}
+		.contactForm input[type="text"], .contactForm textarea{
+			line-height:20px;
+			padding:3px; width:97%;
+			background:url(images/textbox.gif) top left repeat-x #fff;
+			border:1px solid #F0EBE7;
+			box-sizing: content-box;
+			-ms-box-sizing: content-box;
+			-moz-box-sizing: content-box;
+			font-family:Arial, Helvetica, sans-serif;
+			font-style:italic;
+			color:#423223;}
+			
+		.contactForm input[type="submit"]{
+			line-height:29px;height:28px;
+			padding:0 15px;
+			background:url(images/viewMore.gif) left top repeat-x #991715;
+			border:none;
+			border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;
+			text-transform:uppercase; text-shadow:0 -1px #8d1412;
+			font-size:11px; font-weight:bold;
+			color:#fff;
+			cursor:pointer;}
+		.contactForm input[type="submit"]:hover{
+			background:url(images/viewMore.gif) left bottom repeat-x #c02a28;
+			text-shadow:0 1px #8d1412;}
+	
+		
+.contactInfo{
+	width:270px;
+	margin:0 0 0 15px;
+	border-left: 1px dotted #d9d9d9;}
+	.contactInfo p.Adress{
+		padding:0 0 0;
+		color:#3f3124}
+	.contactInfo p.Email{
+		padding:0 0 0;
+		color:#9c1615;}
+		.contactInfo p.Email a{
+			color:#9c1615;}
+		.contactInfo p.Email a:hover{
+			text-decoration:underline;}
+		
+/*NEWS DETAILS*/
+h2.newsDetails{
+	font-size:27px;
+	color:#;}
+	.newsDetailsTitle{
+		font-size:26px;
+		text-shadow:0 1px #efe9e1;
+		color:#413122;}
+	span.newsDetailsDesc{
+		display:block;
+		padding:20px 0 20px;
+		font-size:11px;
+		text-transform:uppercase;;
+		color:#A31C1A;}
+	.newsDetailsContent{
+		margin:0 0 20px;
+		line-height:150%;
+		color:#413122}
+	.newsDetailsContent p{
+		margin:0 0 17px;}
+		
+/*ROOM DETAILS*/
+#galleria {
+height: 380px;
+margin:15px 0 0;}
+
+.roomDetailsInfo{
+	padding:0 15px 0 0; margin:0 25px 15px 0;
+}
+	.roomDetailsInfo li{
+		padding:0 0 0 12px; margin:5px 0; width:150px; float:left; margin:0 5px 5px;
+		background: url(images/node02.png) left 6px no-repeat;
+		font-size:13px;}
+.roomDetailsContent{
+	margin:10px 0}
+.roomDetailsPrices .priceTag{
+	float:left;
+	height:23px; line-height:23px;
+	padding:0 15px 0;
+	background:url(images/priceTag.png) left top no-repeat;
+	border-radius:0 3px 3px 0;-moz-border-radius:0 3px 3px 0;-webkit-border-radius:0 3px 3px 0;
+	font-weight:bold;
+	color:#fff;}		
+
+
+.content{
+	background:#fff; padding:10px 10px 20px;}
+
+
+
+.form_search{ padding:10px;}
+.form_search a.button{font-weight:bold; background:#413122; color:#fff; padding:4px 10px;}
+
+/*BOOKINGPAGE*/
+.bookingPage{
+	width:500px;
+	margin:0 auto;}
+
+	.bookingPage .bookingFormContent label{
+				display:inline-block;
+				width:100px;}
+	.bookingPage .bookingFormContent textarea{
+				height:55px;}
+	.cs-buttons a {
+float: left;
+margin: 0 7px;
+height: 12px;
+width: 12px;
+background-image: url(images/slideBtn.PNG);
+background-position: bottom left;
+background-repeat: no-repeat;
+text-indent: -1000px;
+color: #ffff;
+}
